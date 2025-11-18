@@ -152,4 +152,8 @@ export default function handler(req, res) {
     }
 
     res.status(200).json(quiz);
+
+    setTimeout(() => {
+        res.status(200).json(quiz);
+    }, 800);
 }
